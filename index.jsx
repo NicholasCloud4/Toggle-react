@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Star from "./Star"
-import Toggle from './Toggle';
+import Toggle from './Toggle/Toggle';
 
 function App() {
 

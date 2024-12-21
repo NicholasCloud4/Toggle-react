@@ -10,7 +10,6 @@ export default function Toggle({ children }) {
         setOn((prevState => {
             return !prevState
         }))
-        console.log(!on);
 
     }
 

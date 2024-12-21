@@ -11,6 +11,8 @@ function App() {
                 <Toggle.Button>
                     <Star />
                 </Toggle.Button>
+                <Toggle.On>Starred</Toggle.On>
+                <Toggle.Off>NOT Starred</Toggle.Off>
             </Toggle>
         </>
     )

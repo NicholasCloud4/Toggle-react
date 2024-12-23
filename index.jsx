@@ -7,11 +7,13 @@ function App() {
 
     return (
         <>
-            <Star onChange={() => console.log('Star clicked')} />
+            <Star onChange={() => { }} />
 
             <br />
 
-            {/* <Menu>
+            <Menu onOpen={() => {
+                console.log("Menu opened");
+            }}>
                 <Menu.Button>Menu</Menu.Button>
                 <Menu.Dropdown>
                     <Menu.Item>Home</Menu.Item>
@@ -19,7 +21,7 @@ function App() {
                     <Menu.Item>Contact</Menu.Item>
                     <Menu.Item>Blog</Menu.Item>
                 </Menu.Dropdown>
-            </Menu> */}
+            </Menu>
         </>
     )
 }

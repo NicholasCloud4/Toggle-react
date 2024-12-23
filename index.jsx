@@ -5,20 +5,13 @@ import Star from './components/Star';
 
 function App() {
 
-    /**
-       * Challenge: 
-       * Move other Toggle logic to be composed with the Menu
-       * components internally, so the person using our Menu
-       * component never needs to touch the generic Toggle at all.
-       */
-
     return (
         <>
-            <Star />
+            <Star onChange={() => console.log('Star clicked')} />
 
             <br />
 
-            <Menu>
+            {/* <Menu>
                 <Menu.Button>Menu</Menu.Button>
                 <Menu.Dropdown>
                     <Menu.Item>Home</Menu.Item>
@@ -26,7 +19,7 @@ function App() {
                     <Menu.Item>Contact</Menu.Item>
                     <Menu.Item>Blog</Menu.Item>
                 </Menu.Dropdown>
-            </Menu>
+            </Menu> */}
         </>
     )
 }

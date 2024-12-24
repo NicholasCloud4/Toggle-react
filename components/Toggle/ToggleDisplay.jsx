@@ -7,6 +7,8 @@ export default function ToggleDisplay({ children }) {
 
 
     return (
-        <div>{children(context.on)}</div>
+        <>
+            {children(context.on)}
+        </>
     )
 }

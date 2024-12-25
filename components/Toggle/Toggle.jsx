@@ -1,22 +1,13 @@
 import React from "react"
 import useEffectOnUpdate from "../../hooks/useEffectOnUpdate"
+import useToggle from "../../hooks/useToggle"
 
 const ToggleContext = React.createContext()
 
 export default function Toggle({ children, onToggle = () => { } }) {
 
-    const [on, setOn] = React.useState(false)
+    const [on, toggle] = useToggle()
 
-    function toggle() {
-        setOn(prevOn => !prevOn)
-    }
-
-    /**
-     * Challenge: use our new, shiny custom hook
-     * to set up the effect again. You'll know it's
-     * working when the console log runs after clicking
-     * the box, but not on the initial render.
-     */
 
     useEffectOnUpdate(() => {
         onToggle()

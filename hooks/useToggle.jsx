@@ -5,7 +5,11 @@
  *    parameters for now. (We'll come back to that)
  * 2. Bring the useState and toggle function from
  *    our Toggle component into this hook
- * 3. TBA
+ * 3. Add the missing import (React)
+ * 4. RETURN from this function an array with `on` as
+ *    the first index and `toggle` as the second
+ *    index.
+ * 5. Add the missing import in Toggle.js
  */
 
 import React from "react"
@@ -17,5 +21,9 @@ export default function useToggle() {
     function toggle() {
         setOn(prevOn => !prevOn)
     }
+
+    return (
+        [on, toggle]
+    )
 
 }

@@ -28,7 +28,7 @@ function App() {
     return (
         <>
 
-            <Toggle onToggle={() => {
+            {/* <Toggle onToggle={() => {
                 console.log("Toggle clicked");
             }}>
                 <Toggle.Button>
@@ -38,14 +38,14 @@ function App() {
                         }}
                     </Toggle.Display>
                 </Toggle.Button>
-            </Toggle>
+            </Toggle> */}
 
 
-            {/* <Star onChange={() => { }} />
+            <Star onChange={() => { }} />
 
             <br />
 
-            <Menu onOpen={() => {
+            {/* <Menu onOpen={() => {
                 console.log("Menu opened");
             }}>
                 <Menu.Button>Menu</Menu.Button>

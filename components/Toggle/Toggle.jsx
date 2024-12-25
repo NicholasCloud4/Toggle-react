@@ -1,5 +1,5 @@
 import React from "react"
-import { useEffect, useRef } from "react"
+import useEffectOnUpdate from "../../hooks/useEffectOnUpdate"
 
 const ToggleContext = React.createContext()
 
@@ -7,21 +7,21 @@ export default function Toggle({ children, onToggle = () => { } }) {
 
     const [on, setOn] = React.useState(false)
 
-
-    const firstRender = useRef(true)
-
-
     function toggle() {
         setOn(prevOn => !prevOn)
     }
 
-    useEffect(() => {
-        if (firstRender.current === true) {
-            firstRender.current = false
-        } else {
-            onToggle()
-        }
+    /**
+     * Challenge: use our new, shiny custom hook
+     * to set up the effect again. You'll know it's
+     * working when the console log runs after clicking
+     * the box, but not on the initial render.
+     */
+
+    useEffectOnUpdate(() => {
+        onToggle()
     }, [on])
+
 
     return (
         <ToggleContext.Provider value={{ on, toggle }}>

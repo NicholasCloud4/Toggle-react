@@ -28,7 +28,9 @@ function App() {
     return (
         <>
 
-            <Toggle>
+            <Toggle onToggle={() => {
+                console.log("Toggle clicked");
+            }}>
                 <Toggle.Button>
                     <Toggle.Display>
                         {(on) => {

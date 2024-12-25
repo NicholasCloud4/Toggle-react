@@ -41,11 +41,11 @@ function App() {
             </Toggle> */}
 
 
-            <Star onChange={() => { }} />
+            {/* <Star onChange={() => { }} /> */}
 
             <br />
 
-            {/* <Menu onOpen={() => {
+            <Menu onOpen={() => {
                 console.log("Menu opened");
             }}>
                 <Menu.Button>Menu</Menu.Button>
@@ -55,7 +55,7 @@ function App() {
                     <Menu.Item>Contact</Menu.Item>
                     <Menu.Item>Blog</Menu.Item>
                 </Menu.Dropdown>
-            </Menu> */}
+            </Menu>
         </>
     )
 }

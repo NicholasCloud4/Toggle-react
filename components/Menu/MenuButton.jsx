@@ -4,8 +4,6 @@ import Toggle from "../Toggle/index"
 
 export default function MenuButton({ children }) {
     return (
-        <Toggle.Button>
-            <Button>{children}</Button>
-        </Toggle.Button>
+        <Button>{children}</Button>
     )
 }

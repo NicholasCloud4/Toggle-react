@@ -15,7 +15,7 @@ export default function Menu({ children, onOpen }) {
     *    callback, which we'll work on fixing soon).
     */
 
-    const [open, toggleOpen] = useToggle(false)
+    const [open, toggleOpen] = useToggle(true)
 
     return (
         <>

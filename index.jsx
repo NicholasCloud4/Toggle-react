@@ -46,7 +46,7 @@ function App() {
             <br />
 
             <Menu onOpen={() => {
-                console.log("Menu opened");
+                console.log("Menu opened/closed");
             }}>
                 <Menu.Button>Menu</Menu.Button>
                 <Menu.Dropdown>
